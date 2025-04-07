@@ -145,15 +145,23 @@ content_copy
 download
 Use code with caution.
 IGNORE_WHEN_COPYING_END
+```
 
-frontend/.env:
+**`frontend/.env`:**
 
+```
 # URL for the backend API (REQUIRED)
+
 # Should match where your Flask backend is running
+
 VITE_API_URL=http://localhost:5000/api
 
+
 # Unsplash API Access Key (REQUIRED for images)
+
 VITE_UNSPLASH_ACCESS_KEY=YOUR_UNSPLASH_ACCESS_KEY_HERE
+```
+
 IGNORE_WHEN_COPYING_START
 content_copy
 download
@@ -202,4 +210,7 @@ Unit and integration tests for backend and frontend.
 Deployment configuration (Docker, serverless, etc.).
 
 License 📄 (Maybe Later)
+
+```
+
 ```
