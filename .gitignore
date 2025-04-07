@@ -1,0 +1,42 @@
+# Python virtual environment
+venv/
+*.pyc
+__pycache__/
+
+# Environment variables
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files (optional)
+.idea/
+.vscode/
+
+node_modules/
+
+# Node dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/ # If using SSR
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env*.local
+
+# IDE directories
+.idea/
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
