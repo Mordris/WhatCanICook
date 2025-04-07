@@ -1,5 +1,8 @@
-Okay, here is a comprehensive README.md file suitable for the root directory of your WhatCanICook_App project. It covers the project's purpose, features, tech stack, setup, environment variables, and how to run it.
+Okay, I've reviewed your `README.md` file and found the issues near the end. The main problems were artifacts likely left over from a copy/paste operation (like `IGNORE_WHEN_COPYING_START...END` comments) and an unnecessary empty code block at the very end.
 
+Here's the corrected version:
+
+````markdown
 # What Can I Cook? - AI Recipe Suggester 🍳
 
 This full-stack web application helps users discover recipes they can make based on the ingredients they have available, leveraging the power of Google's Gemini AI. Enter your ingredients, get recipe ideas complete with instructions and images, and reduce food waste!
@@ -140,77 +143,63 @@ GEMINI_API_KEY=YOUR_ACTUAL_GEMINI_API_KEY_HERE
 # Use space-separated origins. For local dev:
 CORS_ORIGINS="http://localhost:5173 http://127.0.0.1:5173"
 # For production, change to your deployed frontend URL(s)
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
 ```
+````
 
 **`frontend/.env`:**
 
-```
+```dotenv
 # URL for the backend API (REQUIRED)
-
 # Should match where your Flask backend is running
-
 VITE_API_URL=http://localhost:5000/api
 
-
 # Unsplash API Access Key (REQUIRED for images)
-
 VITE_UNSPLASH_ACCESS_KEY=YOUR_UNSPLASH_ACCESS_KEY_HERE
 ```
 
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-Dotenv
-IGNORE_WHEN_COPYING_END
+_(Optional): Create `.env.example` files in both directories showing the structure of the required variables without the actual secrets, and commit those example files._
 
-(Optional): Create .env.example files in both directories showing the structure of the required variables without the actual secrets, and commit those example files.
-
-Running the Application ▶️
+## Running the Application ▶️
 
 You need to run both the backend and frontend servers concurrently.
 
-Run Backend Server:
+**Run Backend Server:**
 
-Open a terminal in the backend/ directory.
+1.  Open a terminal in the `backend/` directory.
+2.  Activate the virtual environment: `source venv/bin/activate` (or `venv\Scripts\activate` on Windows).
+3.  Start the Flask development server: `flask run`
+    _(The backend should be running on http://localhost:5000 by default)_
 
-Activate the virtual environment: source venv/bin/activate (or venv\Scripts\activate).
+**Run Frontend Server:**
 
-Start the Flask development server: flask run
+1.  Open a _separate_ terminal in the `frontend/` directory.
+2.  Start the Vite development server: `yarn dev` (or `npm run dev`)
+    _(The frontend should be running on http://localhost:5173 by default)_
 
-(The backend should be running on http://localhost:5000 by default)
+**Access the App:** Open your web browser and navigate to `http://localhost:5173`.
 
-Run Frontend Server:
+## Future Improvements 🚀
 
-Open a separate terminal in the frontend/ directory.
+- Add filters for dietary restrictions, cuisine type, or meal type.
+- Implement user accounts to save favorite recipes.
+- "Pantry" feature to save common ingredients.
+- More sophisticated image searching (e.g., using keywords from ingredients).
+- Unit and integration tests for backend and frontend.
+- Deployment configuration (Docker, serverless, etc.).
 
-Start the Vite development server: yarn dev (or npm run dev)
+## License 📄
 
-(The frontend should be running on http://localhost:5173 by default)
+_(Maybe Later - Consider adding an open-source license like MIT or Apache 2.0)_
 
-Access the App: Open your web browser and navigate to http://localhost:5173.
+````
 
-Future Improvements 🚀
+**Summary of Changes:**
 
-Add filters for dietary restrictions, cuisine type, or meal type.
+1.  **Removed `IGNORE_WHEN_COPYING_START`/`END` blocks:** These lines appeared after the `.env` examples and were not part of the intended Markdown or `.env` syntax.
+2.  **Removed Empty Code Block:** Deleted the ` ``` ``` ` found at the very end of the file.
+3.  **Minor Formatting (Optional):** Slightly adjusted spacing within the `.env` examples for consistency (removed extra blank lines).
+4.  **Numbered Steps for Running Servers:** Changed the bullet points under "Run Backend Server" and "Run Frontend Server" to numbered lists for slightly clearer sequential instructions.
+5.  **Clarified License Placeholder:** Added a small note suggesting common open-source licenses.
 
-Implement user accounts to save favorite recipes.
-
-"Pantry" feature to save common ingredients.
-
-More sophisticated image searching (e.g., using keywords from ingredients).
-
-Unit and integration tests for backend and frontend.
-
-Deployment configuration (Docker, serverless, etc.).
-
-License 📄 (Maybe Later)
-
-```
-
-```
+This corrected version should render properly and be free of the extraneous syntax issues.
+````
