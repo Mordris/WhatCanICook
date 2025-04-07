@@ -1,9 +1,8 @@
-````markdown
 # What Can I Cook? - AI Recipe Suggester 🍳
 
 This full-stack web application helps users discover recipes they can make based on the ingredients they have available, leveraging the power of Google's Gemini AI. Enter your ingredients, get recipe ideas complete with instructions and images, and reduce food waste!
 
-[![Chef Hat Favicon](/frontend/public/chef-hat.svg?raw=true "Chef Hat Icon")](#)
+[![Chef Hat Favicon](./frontend/public/chef-hat.svg "Chef Hat Icon")](#)
 
 ## Features ✨
 
@@ -128,7 +127,7 @@ You need to create `.env` files in both the `backend` and `frontend` directories
 
 **`backend/.env`:**
 
-```dotenv
+````dotenv
 # Flask Environment (development or production)
 FLASK_ENV=development
 
@@ -139,8 +138,6 @@ GEMINI_API_KEY=YOUR_ACTUAL_GEMINI_API_KEY_HERE
 # Use space-separated origins. For local dev:
 CORS_ORIGINS="http://localhost:5173 http://127.0.0.1:5173"
 # For production, change to your deployed frontend URL(s)
-```
-````
 
 **`frontend/.env`:**
 
@@ -151,7 +148,7 @@ VITE_API_URL=http://localhost:5000/api
 
 # Unsplash API Access Key (REQUIRED for images)
 VITE_UNSPLASH_ACCESS_KEY=YOUR_UNSPLASH_ACCESS_KEY_HERE
-```
+````
 
 _(Optional): Create `.env.example` files in both directories showing the structure of the required variables without the actual secrets, and commit those example files._
 
@@ -186,3 +183,7 @@ You need to run both the backend and frontend servers concurrently.
 ## License 📄
 
 _(Maybe Later)_
+
+```
+
+```
