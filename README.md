@@ -47,28 +47,6 @@ This full-stack web application helps users discover recipes they can make based
 - **AI Model:** Google Gemini API (via `google-generativeai`)
 - **Images:** Unsplash API
 
-## Project Structure 📂
-
-WhatCanICook_App/
-│
-├── backend/ # Flask Backend API
-│ ├── app/ # Core application package (Blueprints, Services, Config)
-│ ├── venv/ # Python Virtual Environment
-│ ├── run.py # Script to run Flask app
-│ ├── requirements.txt # Python dependencies
-│ ├── .env # Backend Environment Variables (Secrets!)
-│ └── .gitignore
-│
-└── frontend/ # React Frontend Application
-├── public/ # Static assets (favicon, etc.)
-├── src/ # React source code (Components, Services, Utils)
-├── .env # Frontend Environment Variables
-├── .env.example # Example Frontend Env Variables
-├── package.json # Node dependencies & scripts
-├── vite.config.js # Vite configuration
-├── yarn.lock # Yarn lock file (or package-lock.json)
-└── .gitignore
-
 ## Setup and Installation ⚙️
 
 **Prerequisites:**
