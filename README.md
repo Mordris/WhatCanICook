@@ -189,17 +189,4 @@ You need to run both the backend and frontend servers concurrently.
 
 ## License 📄
 
-_(Maybe Later - Consider adding an open-source license like MIT or Apache 2.0)_
-
-````
-
-**Summary of Changes:**
-
-1.  **Removed `IGNORE_WHEN_COPYING_START`/`END` blocks:** These lines appeared after the `.env` examples and were not part of the intended Markdown or `.env` syntax.
-2.  **Removed Empty Code Block:** Deleted the ` ``` ``` ` found at the very end of the file.
-3.  **Minor Formatting (Optional):** Slightly adjusted spacing within the `.env` examples for consistency (removed extra blank lines).
-4.  **Numbered Steps for Running Servers:** Changed the bullet points under "Run Backend Server" and "Run Frontend Server" to numbered lists for slightly clearer sequential instructions.
-5.  **Clarified License Placeholder:** Added a small note suggesting common open-source licenses.
-
-This corrected version should render properly and be free of the extraneous syntax issues.
-````
+_(Maybe Later)_
