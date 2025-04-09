@@ -161,7 +161,3 @@ You need to run both the backend and frontend servers concurrently.
 ## License 📄
 
 _(Maybe Later)_
-
-```
-
-```
